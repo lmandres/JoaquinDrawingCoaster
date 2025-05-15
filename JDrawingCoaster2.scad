@@ -1,5 +1,5 @@
 // Import inch unit from MCAD
-inch = 2.54;
+inch = 25.4;
 
 coaster_size = 4 * inch;   // 4 inches = 101.6 mm
 corner_radius = 0.5 * inch; // 0.5 inch = 12.7 mm
@@ -17,7 +17,7 @@ module rounded_square(size, radius, height) {
 module svg_shape(height) {
     translate([-0.5 * inch, -0.5 * inch, 0.125 * inch])
         linear_extrude(height)
-            scale([ 0.035, 0.035, 1])
+            scale([ 0.35, 0.35, 1])
                 offset(0.001)
                     import("JoaquinDrawing2.svg", center=true);
 }
